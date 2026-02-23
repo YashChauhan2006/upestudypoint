@@ -248,7 +248,7 @@ function ResourceModal({ category, onClose }: ResourceModalProps) {
                         <div className="text-muted-foreground text-xs mt-0.5">{doc.subject}</div>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">
-                        <span className="text-xs text-primary font-medium bg-primary/15 px-2 py-0.5 rounded-full hidden sm:block">
+                        <span className="text-xs text-primary font-medium bg-green-light px-2 py-0.5 rounded-full hidden sm:block">
                           {doc.pages}
                         </span>
                         <a
@@ -465,7 +465,7 @@ export default function Index() {
                   style={{ animationDelay: `${i * 0.15}s` }}
                   onClick={() => handleResourceClick(res.title)}
                 >
-                  <span className="absolute top-5 right-5 text-xs font-semibold text-primary bg-primary/15 px-2.5 py-1 rounded-full">
+                  <span className="absolute top-5 right-5 text-xs font-semibold text-primary bg-green-light px-2.5 py-1 rounded-full">
                     {res.tag}
                   </span>
                   <div className="w-14 h-14 rounded-xl gradient-green flex items-center justify-center mb-5 shadow-green group-hover:scale-105 transition-transform">
@@ -589,7 +589,7 @@ export default function Index() {
                     <div className="font-semibold text-foreground text-sm">{note.title}</div>
                     <div className="text-muted-foreground text-xs mt-0.5">{note.subject}</div>
                   </div>
-                  <span className="text-xs text-primary font-medium bg-primary/15 px-2.5 py-1 rounded-full">{note.pages}</span>
+                  <span className="text-xs text-primary font-medium bg-green-light px-2.5 py-1 rounded-full">{note.pages}</span>
                 </button>
               ))}
             </div>
@@ -680,7 +680,7 @@ export default function Index() {
 
           {/* Divider */}
           <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-secondary-foreground/40">
-            <p>Made with 💜 for UPE college students. All resources are for educational purposes only.</p>
+            <p>Made with 💚 for UPE college students. All resources are for educational purposes only.</p>
             <p>© {new Date().getFullYear()} UPEStudypoint.com. All Rights Reserved.</p>
           </div>
         </div>
