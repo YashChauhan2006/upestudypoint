@@ -252,11 +252,11 @@ function ResourceModal({ category, onClose }: ResourceModalProps) {
                           {doc.pages}
                         </span>
                         <a
-                          href={doc.link}
+                          href={doc.link !== "#" ? doc.link : undefined}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg gradient-green text-primary-foreground text-xs font-semibold hover:opacity-90 transition-opacity"
-                          onClick={(e) => { e.preventDefault(); alert("PDF will be available soon!"); }}
+                          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg gradient-green text-primary-foreground text-xs font-semibold hover:opacity-90 transition-opacity ${doc.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
+                          onClick={(e) => { if (doc.link === "#") { e.preventDefault(); } }}
                         >
                           <Download className="w-3 h-3" />
                           Open PDF
