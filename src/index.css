@@ -74,6 +74,17 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 0;
   }
 
   h1, h2, h3 {
