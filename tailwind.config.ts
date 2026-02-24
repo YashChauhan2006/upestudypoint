@@ -61,7 +61,7 @@ export default {
   			'green-light': 'hsl(var(--green-light))',
   			'green-glow': 'hsl(var(--green-glow))',
   			'black-deep': 'hsl(var(--black-deep))',
-  			'cream': 'hsl(var(--cream))',
+  			cream: 'hsl(var(--cream))',
   			'cream-dark': 'hsl(var(--cream-dark))'
   		},
   		borderRadius: {
